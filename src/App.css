@@ -1,0 +1,166 @@
+
+.App {
+  text-align: center;
+}
+
+body {
+  margin: 30;
+  padding: 20;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ebf5f5;
+}
+.studentBlock {
+  display: flex;
+  flex-wrap: wrap;
+}
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #1f4e8c;
+}
+h4{
+  margin:10px
+}
+
+a{
+  color: #1f4e8c;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(242, 148, 65);
+  font-style: bold;
+  width: 100;
+}
+
+.listOfStudents {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 13px;
+  text-decoration: none;
+  margin: 20px;
+  border-style: double;
+  border-width: 2px;
+  border-color: rgb(169, 238, 217);
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.studentPhoto {
+  position: absolute;
+  left: 4%;
+  top: 20%;
+  height: 200px;
+  animation: fadeIn 4s;
+  z-index: 2;
+  padding: 2px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.dashboardButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+}
+.studentPersona {
+  position: relative;
+  left: 4%;
+  top: 80px;
+  color: rgba(242, 109, 61);
+  text-align: left;
+  font-size: 16px;
+  width: 300px;
+}
+.Nav {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.wincLogo {
+  position: absolute;
+  left: 4%;
+  margin-top: 20px;
+}
+
+.homeIcon {
+  position: absolute;
+  right: 7%;
+  margin-top: 20px;
+  padding: 12px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-width: 2px;
+  border-color: rgb(169, 238, 217);
+}
+button,
+label,
+input {
+  margin-top: 11px;
+  padding: 1px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-width: 2px;
+  border-radius:10px;
+  border-color: rgb(169, 238, 217);
+  padding: 5px;
+}
+
+select {
+  margin-top: 11px;
+  border: 0 none;
+  color: rgb(169, 238, 217);
+  background: transparent;
+  font-size: 13px;
+  font-weight: bold;
+  width: 200px;
+  height: 40px;
+  background: rgba(242, 109, 61);
+  padding: 5px;
+}
+
+.bar {
+  display: grid;
+  grid-template-columns: minmax(500px, 84%) 1fr;
+  padding: 32, 0;
+  margin: 1rem;
+}
+.resetButton {
+  width: auto;
+  background: rgb	(122,191,191);
+  color: rgb(242,53,53);
+}
+.buttonDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  justify-items: center;
+}
+
+select option {
+  border: none;
+  color: rgb(76, 13, 13);
+  text-shadow: 0 1px 0 rgba(255, 96, 96, 0.4);
+}
